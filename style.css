@@ -1,0 +1,375 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, body {
+  margin: 0;
+}
+
+h2, h3, p {
+  color: #444;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #F96302;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #000000;
+}
+
+button {
+  background-color: #F96302;
+  color: #FFF;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #da5802;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/*************** Navigation Bar ************/
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  max-height: 80px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  z-index: 10;
+}
+nav img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+nav a, nav button {
+  padding: 10px 40px;
+}
+
+#home {
+  padding: 160px 40px 40px 40px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+#home .left {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+#home h3, #home p {
+  color: #444;
+}
+#home h3 {
+  line-height: 2.2rem;
+}
+#home p {
+  line-height: 1.5rem;
+}
+#home .search {
+  position: relative;
+}
+#home .search #search-input {
+  width: 25vw;
+  padding: 10px;
+}
+#home .search i {
+  position: absolute;
+  font-size: 1.2rem;
+  background-color: #F96302;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+#home button {
+  width: 50%;
+  padding: 15px 0;
+  background-color: #fff;
+  color: #F96302;
+  border: 1px solid #F96302;
+  transition: background-color 0.3s ease;
+}
+#home button i {
+  padding-left: 10px;
+}
+#home button:hover {
+  background-color: #F96302;
+  color: #fff;
+}
+#home img {
+  width: 65%;
+  height: 45%;
+  object-fit: cover;
+}
+
+/************************** Section product **********************/
+#product {
+  padding: 80px 40px;
+}
+#product .container {
+  padding: 20px 0;
+  display: flex;
+  gap: 20px;
+}
+#product .container div {
+  flex: 1;
+}
+#product .container div img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/******************** section about ***********************/
+#about {
+  padding: 80px;
+  background-color: #f3f5f5;
+}
+#about .container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+#about .container div {
+  flex: 1;
+}
+#about .container div h3 {
+  display: inline-block;
+}
+#about .container i {
+  font-size: 3rem;
+  padding-right: 20px;
+}
+
+/********************** section services *****************************/
+#services {
+  padding: 80px 40px;
+}
+#services .container {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+#services .container .item {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+#services .container .item img {
+  object-fit: cover;
+  width: 100%;
+  height: 180px;
+}
+#services .container .item div {
+  padding: 20px;
+}
+#services .container .item div i {
+  padding: 0 10px;
+  color: #F96302;
+}
+#services .container .item:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+/************************ Section trending ***********************/
+#trending {
+  padding: 80px 40px;
+}
+#trending .search {
+  display: flex;
+  padding: 30px 0;
+  gap: 20px;
+}
+#trending .search input {
+  padding: 10px 20px;
+}
+#trending .items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#trending .items div {
+  flex: 1;
+}
+#trending .items div img {
+  width: 100%;
+}
+#trending .items div h3 {
+  margin-top: 10px;
+}
+
+/************************* Section customers*******************************/
+#customers {
+  padding: 40px;
+}
+#customers .container {
+  padding: 20px 0;
+  display: flex;
+  gap: 20px;
+}
+#customers .container .item {
+  position: relative;
+  background-color: #f3f5f5;
+  padding: 0 10px;
+}
+#customers .container .item hr {
+  color: #F96302;
+  width: 25%;
+  margin: 0;
+}
+
+/**************************** section FAQ ***************************/
+#FAQ {
+  padding: 40px;
+}
+#FAQ .title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+#FAQ .question {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+#FAQ .question h4 {
+  display: flex;
+  justify-content: space-between;
+}
+#FAQ .question h4 i {
+  color: #da5802;
+}
+#FAQ .question .detail {
+  position: relative;
+  padding-top: 30px;
+}
+#FAQ .question .detail::before {
+  position: absolute;
+  content: "";
+  background: #F96302;
+  width: 25%;
+  height: 2px;
+  top: 5px;
+  left: 0;
+}
+#FAQ .question .hide {
+  display: none;
+}
+
+/************************* Section pro ********************/
+#pro {
+  padding: 60px 40px;
+  text-align: center;
+}
+#pro h2, #pro p {
+  margin: 30px 0;
+}
+#pro img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  padding: 20px;
+  background-color: #f3f5f5;
+  border-radius: 50%;
+  transform: rotate(30deg);
+}
+#pro button {
+  padding: 20px 60px;
+}
+
+/***************************** Section footer ***************************/
+#footer h4 {
+  padding: 20px 0;
+  color: #F96302;
+}
+#footer a {
+  color: #ccc;
+  line-height: 1.5rem;
+}
+#footer a:hover {
+  color: #F96302;
+}
+#footer p {
+  color: #888;
+}
+#footer .top {
+  padding: 40px;
+  background-color: #212322;
+  display: flex;
+}
+#footer .top div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#footer .bottom {
+  padding: 40px;
+  background-color: #000000;
+  display: flex;
+}
+#footer .bottom div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#footer .bottom .left {
+  text-align: start;
+}
+#footer .bottom .middle {
+  text-align: center;
+}
+#footer .bottom .end {
+  text-align: end;
+}
+
+/*# sourceMappingURL=style.css.map */
